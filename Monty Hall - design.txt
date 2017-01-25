@@ -1,0 +1,33 @@
+CLASSES:
+
+Door object (will make 3)
+X - Have a name
+X - Hold a goat or nothing
+ - Methods:
+X -- Setter (for name)
+X -- Open/reveal if it has a goat
+
+GameHelper
+ - Methods:
+X -- Accept input of guess from user
+ 
+Game itself
+ - Methods:
+ -- setUpGame()
+X	--- Instructions to player about what's going to happen
+X	--- Instantiate all door objects and assign their names etc
+X	--- Call the random assignment of a goat on one of the doors (Math.random() * 3 ?)
+ -- playGame()
+X	--- Get the first guess
+X	--- Call stickOrSwitch
+X	--- Get second guess [loop?]
+X	--- Call finishGame with their second guess
+ -- stickOrSwitch()
+	--- Reveal the emptiness behind one of the other doors (remove it from arrayList?)
+	--- Ask the user if they want to stick or switch? (print items left in the arrayList, only two) (Either enter same guess of the first door or a new door)
+ -- finishGame()
+X	--- Tell them if they won or not
+ -- main method
+X	--- Instantiate game object itself
+X	--- Call setUpGame on it
+X	--- Call playGame on it
